@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEB CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="css/cssf.css">
+</head>
+<body>
+	<center>
+	<br>
+ <h1>JAVASCRIPT WEB CALCULATOR</h1>
+ <hr>
+ <br>
+ <div style ="width: 261px; background:#C1C762">
+
+ 	<form name="calculator">
+		<input name="display" placeholder="0" style="width: 250px; height: 60px; text-align: right; font-size: 30px; border-radius: 8px; margin: 3px;"/>
+		<br>
+		
+		<input type="button" value="7" onclick="document.calculator.display.value +='7'" style="margin: 3px;"/>
+		<input type="button" value="8" onclick="document.calculator.display.value +='8'"/>
+		<input type="button" value="9" onclick="document.calculator.display.value +='9'"/>
+		<input type="button" value="-" onclick="btnsub()"/>
+		<br>
+		<input type="button" value="4" onclick="document.calculator.display.value +='4'" style="margin: 3px;"/>
+		<input type="button" value="5" onclick="document.calculator.display.value +='5'"/>
+		<input type="button" value="6" onclick="document.calculator.display.value +='6'"/>
+		<input type="button" value="*" onclick="btnmult()"/>
+		<br>
+		<input type="button" value="1" onclick="document.calculator.display.value +='1'"style="margin: 3px;"/>
+		<input type="button" value="2" onclick="document.calculator.display.value +='2'"/>
+		<input type="button" value="3" onclick="document.calculator.display.value +='3'"/>
+		<input type="button" value="/" onclick="btndiv()"/>
+		<br>
+		<input type="button" value="0" onclick="document.calculator.display.value +='0'"style="margin: 3px;"/>
+   		<input type="button" value="%" onclick="btnmod()"/>
+		<input type="button" value="." onclick="btndot()"/>
+		<input type="button" value="+" onclick="btnplus()"/>
+		<br>
+		<input id="equa" type="button" value="C" onclick="btnclear()"
+		style="margin: 3px;"/>
+		<input id="equa" type="button" value="=" onclick="document.calculator.display.value = eval(document.calculator.display.value)">
+ 	</form>
+ </div>
+</center>
+<script type="text/javascript" src="js/func.js"></script>
+</body>
+</html>
